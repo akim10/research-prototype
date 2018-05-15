@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Leaderboard</title>
+    <link rel="stylesheet" media="all" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/font-awesome.css" />
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.js"></script>
+    <script type="text/javascript" src="scripts/highcharts.js"></script>
+    <script type="text/javascript" src="scripts/chart.js"></script>
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+  </head>
+  <body>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="newtab.html">Question</a>
+      <br>
+      <a href="leaderboard.html">Leaderboard</a>
+      <br>
+      <a href="profile.html">Profile</a>
+    </div>
+
+    <nav class="hidden-lg-up navbar navbar-expand-lg navbar-light bg-light">
+      <button id="openbtn-border" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container-fluid">
+          <!-- collapsible hamburger menu -->
+          <div class="row">
+            <span id="openbtn-small">&#9776;</span>
+          </div>
+        </div>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link small-nav-link" href="newtab.html">Question</a>
+          <a class="nav-item nav-link small-nav-link" href="leaderboard.html">Leaderboard</a>
+          <a class="nav-item nav-link small-nav-link" href="profile.html">Profile</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <!-- hamburger menu -->
+        <div class="col-2 hidden-md-down">
+          <div id="openbtn">&#9776;</div>
+        </div>
+
+        <div class="col-lg-4 col-5">
+          <h1 class="leaderboardTitle"><strong>Leaderboard</strong></h1>
+        </div>
+        <div class="col-lg-2 col-3 listView">
+          <a class="leaderBoardView selected" href="#"><i class="fa fa-list"></i>&nbsp;&nbsp;List</a>
+        </div>
+        <div class="col-lg-2 col-4 chartView">
+          <a class="leaderBoardView" href="#"><i class="fa fa-bar-chart"></i>&nbsp;&nbsp;Chart</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="main-text push-lg-2 col-lg-8 col-12">
+          <div class="card leaderboardCard">
+            <div class="card-body leaderboardList">
+              <table class="table table-hover leaderboardTable">
+
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th class="school" scope="col">School</th>
+                    <th class="weekly" scope="col">Weekly Points</th>
+                    <th class="total" scope="col">Total Points</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td class="school">Dietrich College</td>
+                    <td class="weekly">240</td>
+                    <td class="total">5800</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">2</th>
+                    <td class="school">School of Computer Science</td>
+                    <td class="weekly">240</td>
+                    <td class="total">5400</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">3</th>
+                    <td class="school">College of Fine Arts</td>
+                    <td class="weekly">230</td>
+                    <td class="total">5250</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">4</th>
+                    <td class="school">Carnegie Institue of Technology</td>
+                    <td class="weekly">200</td>
+                    <td class="total">4500</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">5</th>
+                    <td class="school">Mellon College of Science</td>
+                    <td class="weekly">190</td>
+                    <td class="total">4250</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">6</th>
+                    <td class="school">Tepper School of Business</td>
+                    <td class="weekly">150</td>
+                    <td class="total">4000</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- renders highcharts chart when chart view is selected (in scripts/chart.js) -->
+              <div id="chart"></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

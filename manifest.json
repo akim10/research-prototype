@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Prototype",
+  "minimum_chrome_version": "24.0.1307.0",
+  "version": "0.0.1",
+  "browser_action": {
+     "default_title": "Prototype",
+     "default_popup": "popup.html"
+  },
+  "chrome_url_overrides" : {
+    "newtab": "newtab.html"
+  },
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+          "scripts/jquery.min.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

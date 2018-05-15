@@ -1,0 +1,126 @@
+<!-- some sort of new nice thing to look forward to each time you open a tab -->
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Profile</title>
+    <link rel="stylesheet" media="all" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.js"></script>
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+  </head>
+  <body>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="newtab.html">Question</a>
+      <br>
+      <a href="leaderboard.html">Leaderboard</a>
+      <br>
+      <a href="profile.html">Profile</a>
+    </div>
+
+    <nav class="hidden-lg-up navbar navbar-expand-lg navbar-light bg-light">
+      <button id="openbtn-border" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container-fluid">
+          <!-- collapsible hamburger menu -->
+          <div class="row">
+            <span id="openbtn-small">&#9776;</span>
+          </div>
+        </div>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link small-nav-link" href="newtab.html">Question</a>
+          <a class="nav-item nav-link small-nav-link" href="leaderboard.html">Leaderboard</a>
+          <a class="nav-item nav-link small-nav-link" href="profile.html">Profile</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2 hidden-md-down">
+          <!-- hamburger menu -->
+          <div id="openbtn">&#9776;</div>
+        </div>
+        <div class="col-lg-4 col-5">
+          <h1 class="profileTitle"><strong>Profile</strong></h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="main-text push-lg-2 col-lg-8 col-12">
+          <div class="card profileCard">
+            <div class="card-body profileCardBody">
+              <div class="row">
+                <div class="col-3">
+                  <img class="circle-image" id="profileImage" src="images/me.jpg" />
+                </div>
+                <div class="col-6 profileInfo userInfo">
+                  <h3 class="userName"> Andrew Kim</h3>
+                  <h5 class="userCollege"> Dietrich College </h5>
+                </div>
+                <div class="col-3 profilePoints profileInfo">
+                  <h3 class="userPoints"><strong>1540</strong></h3>
+                  <h5 class="pointsText"> Points </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- user's question answering history -->
+      <div class="row">
+        <div class="main-text push-lg-2 col-lg-8 col-12">
+          <div class="card profileCard">
+            <div class="card-body profileCardBody">
+
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th class="date" scope="col">Date</th>
+                    <th class="question" scope="col">Question</th>
+                    <th class="answer" scope="col">Answer</th>
+                    <th class="pointsEarned hidden-xs-down" scope="col">Points</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="date" scope="row">4/29/18</td>
+                    <td class="question">How many times have you changed your Facebook password in the past 3 months?</td>
+                    <td class="answer">1-2 times</td>
+                    <td class="pointsEarned hidden-xs-down">+25</td>
+                  </tr>
+
+                  <tr>
+                    <td class="date" scope="row">4/28/18</td>
+                    <td class="question">Do you use your CMU login password on any other sites?</td>
+                    <td class="answer">No</td>
+                    <td class="pointsEarned hidden-xs-down">+25</td>
+                  </tr>
+
+                  <tr>
+                    <td class="date" scope="row">4/27/18</td>
+                    <td class="question">Do you use two-factor authentication for your CMU Login?</td>
+                    <td class="answer">Yes</td>
+                    <td class="pointsEarned hidden-xs-down">+50</td>
+                  </tr>
+
+                  <tr>
+                    <td class="date" scope="row">4/25/18</td>
+                    <td class="question">True or False: Disabling location services on your phone prevents your location from being detected.</td>
+                    <td class="answer">False</td>
+                    <td class="pointsEarned hidden-xs-down">+25</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

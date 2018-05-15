@@ -1,0 +1,420 @@
+*{
+  font-family: Avenir;
+}
+
+#intro{
+  margin-top: -20px;
+  transition: 0.8s;
+}
+
+.main-text{
+  text-align: center;
+  color: white;
+}
+
+h1{
+  line-height: 50px;
+}
+
+
+/*--------------------*/
+
+
+a{
+  color: white;
+}
+
+a:hover{
+  color:white;
+}
+
+a:focus{
+  color:white;
+}
+
+
+#quiz-link{
+  font-size: 1.3em;
+  transition: 0.8s;
+}
+
+#start-quiz{
+  margin-top: 50px;
+}
+
+
+/*--------------------*/
+
+
+.sidenav {
+    height: 0;
+    width: 16%;
+    position: fixed;
+    z-index: 1;
+    top: 84px;
+    left: 28px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+    padding-top: 32px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    display: block;
+    transition: 0.8s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav #closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#openbtn{
+  font-size:46px;
+  cursor:pointer;
+  color: white;
+  margin-top: 32px;
+  margin-left: 40px;
+  width: 50px;
+  background: none;
+}
+
+#openbtn-small{
+  font-size:46px;
+  cursor:pointer;
+  color: white;
+  margin-top: 32px;
+  margin-left: 0px;
+  width: 50px;
+  background: none;
+  border: none;
+  float: left;
+}
+
+#openbtn-border{
+  border: none;
+}
+
+a .nav-link{
+  color: white;
+}
+
+.line {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+
+/*--------------------*/
+
+
+label {
+  width: 200px;
+  display: block;
+  float: left;
+}
+label input {
+  display: none;
+}
+label div.radioButton {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background:white;
+  border-radius: 8px;
+  float: left;
+  margin: 0 16px 0 0;
+  position: relative;
+  cursor: pointer;
+}
+label.active div.radioButton:after {
+  content: " ";
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  top: 8px;
+  bottom: 8px;
+  background: #584747;
+  border-radius: 80px;
+}
+
+.radioButtonLabel{
+  color: white;
+  font-size: 22px;
+}
+
+
+/*--------------------*/
+
+
+.selected-answer{
+  font-size: 104px;
+  line-height: 100%;
+}
+
+#results{
+  display: none;
+  margin-top: 40px;
+}
+
+.feedback-text{
+  font-size: 18px;
+}
+
+.points-text{
+  font-size: 16px;
+}
+
+
+/*--------------------*/
+
+
+.leaderboardTitle, .listView, .chartView, .profileTitle{
+  color: white;
+  margin-top: 72px;
+  margin-bottom: 16px;
+}
+
+.listView, .chartView{
+  margin-top: 86px;
+  text-align: right;
+}
+
+.leaderboardCard{
+  background: white;
+  margin-bottom: 48px;
+}
+
+.leaderboardList{
+  padding: 24px;
+  padding-top: 24px;
+}
+
+th{
+  font-size: 20px;
+}
+
+td{
+  color: black;
+}
+
+.school{
+  text-align: left;
+}
+
+.weekly, .total{
+  text-align: center;
+}
+
+thead{
+  border-top: none;
+}
+
+.leaderBoardView{
+  font-size: 24px;
+}
+
+.listView a:hover, .chartView a:hover, .chartView a:focus, .listView a:focus{
+  text-decoration: none;
+}
+
+.selected{
+  opacity: 0.65;
+}
+
+#chart{
+  display: none;
+}
+
+
+/*--------------------*/
+
+
+.popup{
+  width: 304px;
+  height: 360px;
+  border: none;
+}
+
+.points{
+  font-size: 80px;
+  padding-top: 48px;
+  line-height: 80px;
+}
+
+hr{
+  border-color: white;
+}
+
+#popupLink{
+  outline: none;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#popupLink:hover{
+  text-decoration: underline;
+}
+
+.takeQuizButton{
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: white;
+  border:none;
+  cursor: pointer;
+}
+
+.takeQuizButton:hover{
+  color: #FF9595;
+  background-color: #eee;
+  border:none;
+}
+
+.takeQuizButton a{
+  text-decoration: none;
+}
+
+
+/*--------------------*/
+
+
+.profileCard{
+  background: white;
+  margin-bottom: 32px;
+}
+
+.profileCardBody{
+  padding: 24px;
+  padding-bottom: 16px;
+}
+
+.circle-image{
+  width: 70%;
+  border-radius: 70px;
+}
+
+.userName, .userCollege{
+  color: black;
+  text-align: left;
+}
+
+.profilePoints{
+  text-align:center;
+  padding-left: 8%;
+}
+
+.profileInfo{
+  padding-top: 3.5%;
+}
+
+#profileImage{
+  min-width: 72px;
+}
+
+.date, .answer, .question{
+  text-align:left;
+}
+
+.answer{
+  font-weight: 600;
+}
+
+
+/*--------------------*/
+
+
+@media (max-width: 992px) {
+  h1{
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .selected-answer{
+    font-size: 64px;
+  }
+
+  .feedback-text{
+    font-size: 16px;
+  }
+
+  #your-answer{
+    font-size: 28px;
+  }
+
+  #countdown{
+    margin-top: 16px;
+  }
+
+  .leaderboardTitle, .profileTitle{
+    margin-top: 16px;
+  }
+
+  .listView, .chartView{
+    margin-top: 28px;
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  .leaderBoardView{
+    font-size: 19px;
+  }
+
+  .profileInfo{
+    padding-top: 3%;
+  }
+}
+
+@media (max-width: 596px) {
+  .profileInfo{
+    padding-top: 2.5%;
+  }
+
+  .userPoints{
+    font-size: 22px;
+  }
+
+  .pointsText{
+    font-size: 16px;
+  }
+
+  .userInfo{
+    padding-left: 8%;
+  }
+
+  .userName{
+    font-size: 20px;
+  }
+
+  .userCollege{
+    font-size: 15px;
+  }
+
+  .profilePoints{
+    font-size: 22px;
+  }
+
+  .leaderboardTitle{
+    font-size: 19.5px;
+  }
+
+  td{
+    font-size: 14px;
+  }
+
+  th{
+    font-size: 17px;
+  }
+}
